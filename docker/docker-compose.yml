@@ -1,0 +1,13 @@
+# Simple docker-composer.yml
+# You can change your port or volume location
+
+version: '3.3'
+
+services:
+  tavern:
+    image: dariononis/tavern
+    container_name: tavern
+    volumes:
+      - ./tavern:/app/data
+    ports:
+      - 3001:3001
